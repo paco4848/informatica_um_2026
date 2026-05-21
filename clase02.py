@@ -1,5 +1,5 @@
 
-x= 5
-y= x*2
+x= print(5)
+y= print(x*2)
 y
-x =100
+x =print(100)
