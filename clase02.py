@@ -1,3 +1,5 @@
-#hola.py
-print("¡Funciona!")
-print(2+2)
+
+X=5
+y= X*2
+y
+X =100
