@@ -1,0 +1,7 @@
+#Ejercicio 1
+kilometros = int(input("Pon la cantidad de kilometros aqui"))
+Equivalencia_a_millas = kilometros/1.60934
+print(f"la cantidad de kilometros a millas es , {Equivalencia_a_millas:.2f}")
+millas= int(input("pasame las millas y lo pasare a kilometros"))
+Equivalencia_a_kilometros = millas*1.60934
+print(f"la cantidad de kilometros a millas es , {Equivalencia_a_kilometros:.2f}")
