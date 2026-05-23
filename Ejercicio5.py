@@ -1,3 +1,4 @@
+#Calcula la distantancia desde un punto hacia otro punto
 print("punto 1:")
 Punto_1x = int(input(" x1: "))
 Punto_1y = int(input(" y1: ")) 

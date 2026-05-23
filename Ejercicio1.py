@@ -1,4 +1,4 @@
-#Ejercicio 1
+#Convierte kilometros en millas y viseversa
 kilometros = int(input("Ingresá kilómetros: "))
 Equivalencia_a_millas = kilometros/1.60934
 print(f"{kilometros} km equivalen a {Equivalencia_a_millas:.2f} millas")

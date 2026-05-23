@@ -1,5 +1,0 @@
-
-Nombre = input("Ingrese su nombre")
-Edad = int(input("Ingrese su año de nacimiento"))
-Edad_actual = 2026 - Edad
-print(f"Hola {Nombre}, en 2026 tenes/cumplís {Edad_actual} años")

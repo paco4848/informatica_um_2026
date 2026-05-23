@@ -1,3 +1,4 @@
+#cualcula todo lo que deberia ir en el resumen de una cuenta 
 Monto = float(input("Monto de la cuenta: "))
 Porcentaje = int(input("Porcentaje de propina (%): "))
 Personas = int(input("Cantidad de personas: "))

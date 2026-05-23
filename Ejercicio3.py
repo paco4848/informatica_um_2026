@@ -1,4 +1,4 @@
-#Ejercicio 3
+#Calcula la área y el perímetro de un rectangulo
 Base = float(input("Base del rectangulo: "))
 Altura = float(input("Altura del rectangulo: "))
 Area = Base * Altura

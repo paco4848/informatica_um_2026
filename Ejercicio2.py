@@ -1,4 +1,4 @@
-#Ejercicio 2
+#Convierte grados celsius a Fahrenheit y viseversa
 Celsius = float(input("Temperatura en ºC: "))
 Conversion_C_a_F = Celsius * 9/5 + 32
 print(f"{Celsius}ºC equivales a {Conversion_C_a_F:.2f}ºF")

@@ -1,4 +1,4 @@
-#Ejercicio 4
+#Calcula la área y el perímetro de un circulo
 pi = 3.14159
 Radio = float(input("Radio del circulo: "))
 Area = pi * Radio**2
