@@ -1,12 +1,12 @@
 #cualcula todo lo que deberia ir en el resumen de una cuenta 
-Monto = float(input("Monto de la cuenta: "))
-Porcentaje = int(input("Porcentaje de propina (%): "))
-Personas = int(input("Cantidad de personas: "))
-Propina = Monto * (Porcentaje/100)
-Total = Monto + Propina
-Total_persona = Total / Personas
+monto = float(input("Monto de la cuenta: "))
+porcentaje = int(input("Porcentaje de propina (%): "))
+personas = int(input("Cantidad de personas: "))
+propina = monto * (porcentaje/100)
+total = monto + propina
+total_persona = total / personas
 print("Resumen:")
-print(f" Cuenta:                    ${Monto:.2f}")
-print(f" Propina ({Porcentaje}):            ${Propina:.2f}")
-print(f" Total:                     ${Total:.2f}")
-print(f" Por persona:               {Total_persona:.2f}")
+print(f" Cuenta:                    ${monto:.2f}")
+print(f" Propina ({porcentaje}):            ${propina:.2f}")
+print(f" Total:                     ${total:.2f}")
+print(f" Por persona:               {total_persona:.2f}")
