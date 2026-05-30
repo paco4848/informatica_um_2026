@@ -1,3 +1,4 @@
+#Es una aplicacion el cual dando tus años te dan tus dias, horas, minutos,segundos y latidos de corazon
 year = int(input("¿Cuántos años tenes?"))
 dias = year * 365
 hora = dias * 24
