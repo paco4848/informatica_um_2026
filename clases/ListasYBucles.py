@@ -15,11 +15,11 @@ print(f"Total: {total} · Aprobados: {aprobados} · Desaprobados: {desaprobado}"
 N = int(input("notas a ingresar: "))
 notas = []
 
-while True:
-        for nota in range(N):
-            nota = int(input("nota: "))
-            notas.append(nota)
 
+for nota in range(N):
+    nota = float(input("nota: "))
+    notas.append(nota)
+while True:
         promedio = sum(notas) / len(notas)
         aprobados = 0
         for nota in notas:
@@ -28,6 +28,9 @@ while True:
         print(f"Max: {max(notas)} · Min: {min(notas)} · Aprobados: {aprobados}")
         print(f"Notas: {notas} · Promedio: {promedio:.2f}")
         s = input("quieres colocar otro elemento (s/n): ") == "s"
-        if s == False:
+        if s:
+            nota = float(input("nota: "))
+            notas.append(nota)
+        else:
             print("Gracias por usar el programa")
             break
