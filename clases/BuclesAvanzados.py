@@ -1,17 +1,17 @@
-"""
+
 n = int(input("dime un numero: "))
 total = 0
 for i in range(1,n+1):
     total += i
 print(f"N: {n}, suma= {total}")
-"""
-"""
+
+
 n = int(input("N: "))
 total = 1
 for i in range(1,n+1):
     total *= i
 print(f"N: {n}, factorial={total}")
-"""
+
 
 numero = 69
 intentos = 0
