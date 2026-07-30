@@ -20,11 +20,7 @@ def triangulo_invertido(altura):
         print()
         for columna in range(1, fila + 1):
             print("*", end=" ")
-    print()
-        
-            
-            
-            
+    print()   
 while True:
     opcion = int(input("Elije una opcion \n1. Tabla de multiplicar \n2. Tabla completa \n3. Triangulo \n4. Triangulo invertido \nOpcion: "))
     if opcion == 1:
