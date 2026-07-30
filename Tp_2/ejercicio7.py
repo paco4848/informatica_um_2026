@@ -11,15 +11,15 @@ def mostrar_menu():
     while True:
         menu = input(f"=== BIBLIOTECA ===\n 1. Agregar libro \n 2. Listar todos los libros \n 3. Buscar libro por título \n 4. Prestar libro \n 5. Devolver libro \n 6. Listar solo disponibles \n 7. Listar solo prestados \n 8. Estadísticas \n 9. Salir\n")
         if menu == "1" :
-            agregar_libro(biblioteca, titulo, autor, anio)
+            print(agregar_libro(biblioteca, titulo, autor, anio))
         elif menu == "2":
-            listar_libros(biblioteca)
+            print(listar_libros(biblioteca))
         elif menu == "3":
-            buscar_libro(biblioteca, titulo)
+            print(buscar_libro(biblioteca, titulo))
         elif menu == "4":
-            prestar(biblioteca, titulo)
+            print(prestar(biblioteca, titulo))
         elif menu == "5":
-            devolver(biblioteca, titulo)
+            print(devolver(biblioteca, titulo))
         elif menu == "6":
             libros_disponibles = []
             for p in biblioteca:
@@ -31,12 +31,13 @@ def mostrar_menu():
                 if p["prestado"] == True:
                     print(f"{p['titulo']}")
         elif menu == "8":
-            estadisticas(biblioteca)
+            print(estadisticas(biblioteca))
         
         elif menu == "9":
             break
         else:
             print("opccion no valida")
+    return
 def agregar_libro(biblioteca, titulo, autor, anio):
     while True:
         titulo = input("coloca el nombre del libro o fin para salir:")
@@ -47,6 +48,7 @@ def agregar_libro(biblioteca, titulo, autor, anio):
             anio = input("Coloca el año de creacion del libro: ")
             prestado = False
             biblioteca.append({"titulo": titulo, "autor": autor, "anio": anio, "prestado": prestado})
+    return
 
 def buscar_libro(biblioteca, titulo):
     nombre = input("Cual es el titulo del o los libros de buscas: ")
@@ -55,6 +57,7 @@ def buscar_libro(biblioteca, titulo):
         if nombre.lower() in p["titulo"].lower():
             nombre_libros.append((p["titulo"], p["autor"], p["anio"]))
     print(f"Los resultados son: {p["titulo"], p["autor"], p["anio"]}")
+    return
 
 def listar_libros(biblioteca):
     n = 0
@@ -76,6 +79,7 @@ def prestar(biblioteca, libro):
             break
     if not encontrado:
         print("El libro que buscas no existe")
+    return
     
 
 def devolver(biblioteca, libro):
@@ -92,6 +96,7 @@ def devolver(biblioteca, libro):
             break
     if not encontrado:
             print("El libro que buscas no existe")
+    return
 
 def estadisticas(biblioteca):
     libros_prestados_estadistica = 2
@@ -100,4 +105,5 @@ def estadisticas(biblioteca):
             libros_prestados_estadistica += 1
     print(f"La cantidad de libros prestados son: {libros_prestados_estadistica}")
     print(f"Los libros que hay son {len(biblioteca) - libros_prestados_estadistica}")
+    return
 mostrar_menu()
