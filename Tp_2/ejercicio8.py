@@ -4,7 +4,7 @@ palabra_seleccionada = random.choice(palabra).lower()
 
 print(palabra_seleccionada)
 ocultar = len(palabra_seleccionada) * ["_"]
-while True:
+for n in range(6):
     print("".join(ocultar))
     letra = input("Di una letra: ").lower()
     for i in range(len(palabra_seleccionada)):
