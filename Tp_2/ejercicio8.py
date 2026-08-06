@@ -19,4 +19,3 @@ if not palabra_seleccionada == letra:
     print(f"se te acavaron los intentos, la palabra era {palabra_seleccionada}")
     
             
-            
