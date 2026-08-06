@@ -11,15 +11,15 @@ def mostrar_menu():
     while True:
         menu = input(f"=== BIBLIOTECA ===\n 1. Agregar libro \n 2. Listar todos los libros \n 3. Buscar libro por título \n 4. Prestar libro \n 5. Devolver libro \n 6. Listar solo disponibles \n 7. Listar solo prestados \n 8. Estadísticas \n 9. Salir\n")
         if menu == "1" :
-            print(agregar_libro(biblioteca, titulo, autor, anio))
+            agregar_libro(biblioteca, titulo, autor, anio)
         elif menu == "2":
-            print(listar_libros(biblioteca))
+            listar_libros(biblioteca)
         elif menu == "3":
-            print(buscar_libro(biblioteca, titulo))
+            buscar_libro(biblioteca, titulo)
         elif menu == "4":
-            print(prestar(biblioteca, titulo))
+            prestar(biblioteca, titulo)
         elif menu == "5":
-            print(devolver(biblioteca, titulo))
+            devolver(biblioteca, titulo)
         elif menu == "6":
             libros_disponibles = []
             for p in biblioteca:
@@ -31,7 +31,7 @@ def mostrar_menu():
                 if p["prestado"] == True:
                     print(f"{p['titulo']}")
         elif menu == "8":
-            print(estadisticas(biblioteca))
+            estadisticas(biblioteca)
         
         elif menu == "9":
             break
@@ -63,7 +63,7 @@ def listar_libros(biblioteca):
     n = 0
     for p in biblioteca:
         n += 1
-        print(f"{n}. {p["titulo"]}, {p["autor"]}, {p["anio"]}" )
+        print(f"{n}. {p["titulo"]}, {p["autor"]}, {p["anio"]}")
 
 def prestar(biblioteca, libro):
     libro = input("Que libro quieres que te prestemos: ").lower()
