@@ -25,7 +25,7 @@ def mostrar_menu():
             for p in biblioteca:
                 if not p["prestado"] :
                     libros_disponibles.append(p["titulo"])
-                    print(libros_disponibles)
+            print(libros_disponibles)
         elif menu == "7":
             for p in biblioteca:
                 if p["prestado"] == True:
@@ -99,7 +99,7 @@ def devolver(biblioteca, libro):
     return
 
 def estadisticas(biblioteca):
-    libros_prestados_estadistica = 2
+    libros_prestados_estadistica = 0
     for p in biblioteca:
         if p["prestado"] == True:
             libros_prestados_estadistica += 1
